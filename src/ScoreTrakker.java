@@ -2,23 +2,24 @@ import java.util.ArrayList;
 import java.io.FileReader;
 import java.util.Collections;
 import java.util.Scanner;
-import java.util.IOException;
+import java.io.IOException;
 
 class ScoreTrakker {
-    private ArrayList<Student> students = new ArrayList<Student>;
+    private ArrayList<Student> students = new ArrayList<Student>();
     private String[] files = {"scores.txt", "badscore.txt", "nofile.txt" };
 
     public ScoreTrakker() {
         students = new ArrayList<>();
     }
-    
-    public void loadDataFile(string fileName) throws IOException {
+
+    public void loadDataFile(String fileName) throws IOException {
         String line = "";
-        String name = "";
+        FileReader reader = null;
+        Scanner scanner = null;
 
         try {
-            FileReader reader = new FileReader(fileName);
-            Scanner scanner = new Scanner(reader);
+            reader = new FileReader(fileName);
+            scanner = new Scanner(reader);
             while (scanner.hasNextLine()) {
                 String name = scanner.nextLine();
                 String scoreError = scanner.nextLine();
@@ -32,8 +33,12 @@ class ScoreTrakker {
         } catch (IOException e) {
             System.out.println("Can't open file: " + fileName);
         } finally {
-            scanner.close();
-            reader.close();
+            if (scanner != null) {
+                scanner.close();
+            }
+            if (reader != null) {
+                reader.close();
+            }
         }
     }
 
@@ -43,7 +48,7 @@ class ScoreTrakker {
             System.out.println(student);
         }
     }
-    
+
     public void processFiles() {
         for (String fileName : files) {
             try {

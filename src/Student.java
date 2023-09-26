@@ -8,8 +8,8 @@ class Student implements Comparable<Student> {
     }
 
     @Override
-    public int compareEach(Student other) {
-        return this.name.compareEach(other.name);
+    public int compareTo(Student other) {
+        return this.name.compareTo(other.name);
     }
 
     @Override
