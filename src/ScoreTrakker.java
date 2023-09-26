@@ -13,6 +13,7 @@
  * 4. Java IOException Documentation - https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html
  * 5. Using the 'finally' Block for Catching Exceptions - https://www.geeksforgeeks.org/java-program-to-use-finally-block-for-catching-exceptions/
  * 6. Understanding the printStackTrace() Method in Java - https://www.educative.io/answers/what-is-the-printstacktrace-method-in-java
+ * Did not end up using printStackTrace() in the code, but we acknoledged it that we tried to use it and failed at it
  */
 
 import java.util.ArrayList;
