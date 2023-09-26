@@ -1,0 +1,53 @@
+commit 9943f531cae2bf9f2f5c08b5b1b65118ec038554
+Author: Jonathan-Nunez <jonathan.nunez@ibm.com>
+Date:   Tue Sep 26 09:56:52 2023 -0600
+
+    readme file added
+
+commit 2fd2830da0e11a3628dcd15ceffe48028ccee604
+Author: Jonathan-Nunez <jonathan.nunez@ibm.com>
+Date:   Tue Sep 26 09:37:01 2023 -0600
+
+    fix all errors in it, thankfully
+
+commit bfd2ceda14c7d36c2041d9879eb1c31f603cbf68
+Author: Joesterr <101225288+Joesterr@users.noreply.github.com>
+Date:   Tue Sep 26 01:52:42 2023 -0600
+
+    comments and references
+
+commit cd1fc7c482c761bb2a3cb93c9d7f909ac07a6cf2
+Author: Joesterr <101225288+Joesterr@users.noreply.github.com>
+Date:   Tue Sep 26 01:43:47 2023 -0600
+
+    final push we think
+
+commit a3798a4c3b6bee89f67e8a1153c7bea0409f184b
+Author: Joesterr <101225288+Joesterr@users.noreply.github.com>
+Date:   Tue Sep 26 01:18:19 2023 -0600
+
+    calvin and jonathan typing and brains working i hope
+
+commit c30beab417b84239689c72d63b9bccfe0ffdcab3
+Author: Joesterr <101225288+Joesterr@users.noreply.github.com>
+Date:   Tue Sep 26 00:00:20 2023 -0600
+
+    jonathan typing, calvin using brain
+
+commit cab66d975381c632f129dfa8c4520dd564bb5da5
+Author: Joesterr <101225288+Joesterr@users.noreply.github.com>
+Date:   Mon Sep 25 23:50:19 2023 -0600
+
+    calvin typing, jonathan brain working fine i guess
+
+commit 6f65ba01eafd407e9a1e39f3efcbd97616f5bcd5
+Author: Joesterr <101225288+Joesterr@users.noreply.github.com>
+Date:   Mon Sep 25 23:18:56 2023 -0600
+
+    jonathan writing, calvin the brain
+
+commit 6140ed92bae293674e2441bbd77206767b6e921c
+Author: Joesterr <101225288+Joesterr@users.noreply.github.com>
+Date:   Mon Sep 25 22:14:17 2023 -0600
+
+    Initial commit
