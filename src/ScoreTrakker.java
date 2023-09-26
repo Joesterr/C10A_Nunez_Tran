@@ -20,10 +20,11 @@ import java.io.FileReader;
 import java.util.Collections;
 import java.util.Scanner;
 import java.io.IOException;
+import java.io.FileNotFoundException;
 
 class ScoreTrakker {
     private ArrayList<Student> students = new ArrayList<Student>(); 
-    private String[] files = {"scores.txt", "badscore.txt", "nofile.txt" }; 
+    private String[] files = {"scores.txt", "badscores.txt", "nofile.txt" }; 
 
     public ScoreTrakker() {
         students = new ArrayList<>(); 
@@ -41,7 +42,7 @@ class ScoreTrakker {
                 String name = scanner.nextLine(); // Read student name from the file
                 String scoreError = scanner.nextLine(); // Read potential score error message
                 try {
-                    int score = Integer.parseInt(scanner.nextLine()); // Parse and read student score
+                    int score = Integer.parseInt(scoreError); // Parse and read student score
                     students.add(new Student(name, score)); // Create a Student object and add it to the ArrayList
                 } catch (NumberFormatException e) {
                     // Handle the case where the score is not a valid integer
@@ -61,6 +62,7 @@ class ScoreTrakker {
             }
         }
     }
+    
 
     public void printInOrder() {
         Collections.sort(students); // Sort the students ArrayList based on their scores
@@ -73,13 +75,20 @@ class ScoreTrakker {
         for (String fileName : files) {
             try {
                 loadDataFile(fileName); // Load data from each file
-                printInOrder(); // Print the data in sorted order
+                if (!students.isEmpty()) {
+                    System.out.println("Student Score List");
+                    printInOrder();
+                }            
+                System.out.println();
             } catch (FileNotFoundException e) {
                 // Handle the case where the file is not found
                 System.out.println("File not found: " + fileName);
             } catch (IOException e) {
                 // Handle the case where there is an error processing the file
                 System.out.println("Error processing file: " + fileName);
+            } finally {
+                // Clear the students list for the next file
+                students.clear();
             }
         }
     }
